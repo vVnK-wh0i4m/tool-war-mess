@@ -59,7 +59,7 @@ Danh sách key kích hoạt hiện tại:
 
 | Key | Access Key |
 |---|---|
-| `KEY_01` | `VIVUANAMKY-2026` |
+| `KEY_01` | `namkyontop` |
 
 > 🔒 Không chia sẻ access key công khai nếu hệ thống yêu cầu quyền truy cập riêng.
 
