@@ -1,228 +1,326 @@
-# VIVUANAMKY HUB
+<div align="center">
 
-> **ELITE EDITION · HƯỚNG DẪN SỬ DỤNG · © 2026–2027**
+# 🔥 VIVUANAMKY HUB 🔥
+
+![JavaScript](https://img.shields.io/badge/JavaScript-ES6%2B-yellow?logo=javascript&logoColor=white)
+![License](https://img.shields.io/badge/License-MIT-green)
+![Version](https://img.shields.io/badge/Version-Elite-orange)
+![Platform](https://img.shields.io/badge/Platform-Browser-blue)
+
+**Hub/Script giải trí, thử nghiệm và nghiên cứu hành vi hệ thống tin nhắn**
+
+*"Built for experimentation · Designed for fun."*
+
+</div>
 
 ---
 
-## 📖 Giới thiệu
+## ⚠️ Cảnh báo quan trọng
 
-**VIVUANAMKY HUB** là một hub/script được xây dựng với mục đích **giải trí, thử nghiệm và nghiên cứu hành vi của hệ thống tin nhắn**.
+> **Công cụ này được cung cấp cho mục đích giải trí, thử nghiệm và nghiên cứu.** Người dùng **chịu toàn bộ trách nhiệm** khi sử dụng. **KHÔNG** sử dụng cho mục đích vi phạm pháp luật hoặc gây hại đến người khác.
 
 ---
 
-# 🛠️ Hướng dẫn sử dụng
+## 📋 Mục lục
 
-## 1. Mở Developer Tools
+- [Giới thiệu](#-giới-thiệu)
+- [Tính năng](#-tính-năng)
+- [Yêu cầu hệ thống](#-yêu-cầu-hệ-thống)
+- [Hướng dẫn cài đặt và sử dụng](#-hướng-dẫn-cài-đặt-và-sử-dụng)
+- [Access Key](#-access-key)
+- [Troubleshooting](#-troubleshooting)
+- [Cấu trúc dự án](#-cấu-trúc-dự-án)
+- [Bản quyền và điều khoản sử dụng](#-bản-quyền-và-điều-khoản-sử-dụng)
+- [Hỗ trợ](#-hỗ-trợ)
 
-Truy cập trang web/nền tảng mà bạn muốn sử dụng VIVUANAMKY HUB.
+---
 
-### 🪟 Windows / Linux
+## 🌟 Giới thiệu
 
-```text
+**VIVUANAMKY HUB** là một hub/script được xây dựng bằng JavaScript, hoạt động thông qua Developer Tools Console của trình duyệt. Công cụ được thiết kế cho các mục đích:
+
+- 🎮 **Giải trí** - Trải nghiệm các tính năng thú vị
+- 🧪 **Thử nghiệm** - Kiểm tra các chức năng hệ thống
+- 🔬 **Nghiên cứu** - Tìm hiểu hành vi của hệ thống tin nhắn
+- 🛠️ **Debug** - Kiểm thử các tính năng liên quan đến messaging
+
+---
+
+## 🚀 Tính năng
+
+| Tính năng | Mô tả |
+|-----------|--------|
+| 🔐 Access Key System | Hệ thống bảo mật bằng key |
+| 🌐 Browser-based | Chạy trực tiếp trên trình duyệt |
+| ⚡ Lightweight | Không cần cài đặt phức tạp |
+| 🔄 Auto-update | Tương thích với các phiên bản mới |
+| 🛡️ Obfuscated | Mã nguồn được bảo vệ |
+
+---
+
+## 💻 Yêu cầu hệ thống
+
+| Thành phần | Yêu cầu |
+|------------|----------|
+| Trình duyệt | Chrome, Edge, Firefox, Opera (mới nhất) |
+| Hệ điều hành | Windows, macOS, Linux |
+| Mạng | Kết nối internet |
+| RAM | Tối thiểu 2GB |
+
+---
+
+## 📥 Hướng dẫn cài đặt và sử dụng
+
+### Bước 1: Truy cập trang web
+
+Mở trang web/nền tảng mà bạn muốn sử dụng VIVUANAMKY HUB trên trình duyệt.
+
+### Bước 2: Mở Developer Tools
+
+#### 🪟 Windows / Linux
+
+```
 Ctrl + Shift + I
-
-Hoặc:
-
-```text
-F12
 ```
 
-### 🍎 macOS
+hoặc nhấn `F12`
 
-```text
+#### 🍎 macOS
+
+```
 ⌘ Command + ⌥ Option + I
 ```
 
----
+### Bước 3: Chuyển sang Console
 
-## 2. Mở Console
+Sau khi Developer Tools mở, chọn tab **Console**.
 
-Sau khi Developer Tools được mở, chuyển sang:
+### Bước 4: Cho phép Paste (nếu cần)
 
-```text
-Console
+Một số trình duyệt chặn paste mã vào Console出于bảo mật. Nếu thấy thông báo cảnh báo:
+
+1. Gõ thủ công: `allow pasting`
+2. Nhấn `Enter`
+
 ```
-
----
-
-## 3. Cho phép Paste
-
-Một số trình duyệt có cơ chế bảo vệ **Self-XSS**, khiến việc paste mã trực tiếp vào Console bị chặn.
-
-Nếu trình duyệt yêu cầu xác nhận, hãy **tự nhập thủ công**:
-
-```text
 allow pasting
 ```
 
-Sau đó nhấn:
+> ⚠️ **Lưu ý:** Chỉ cho phép paste khi bạn tin tưởng mã nguồn. Không paste JavaScript không rõ nguồn gốc.
 
-```text
-Enter
-```
+### Bước 5: Chạy Script
 
-> ⚠️ **Cảnh báo:** Chỉ cho phép paste khi bạn biết rõ mã đang chuẩn bị chạy. Không paste JavaScript không rõ nguồn gốc vào Developer Console.
+1. Copy toàn bộ script từ file `[tool war]vVnK-hub.js`
+2. Quay lại tab **Console**
+3. Paste script vào
+4. Kiểm tra nội dung
+5. Nhấn `Enter`
 
----
+### Bước 6: Nhập Access Key
 
-## 4. Chạy VIVUANAMKY HUB
-
-Sau khi Console đã cho phép paste:
-
-1. Copy script của **VIVUANAMKY HUB**.
-2. Quay lại tab **Console**.
-3. Paste script.
-4. Kiểm tra nội dung.
-5. Nhấn `Enter`.
+Nếu hub yêu cầu Access Key, nhập key hợp lệ (xem phần [Access Key](#-access-key)).
 
 ### Quy trình nhanh
 
-```text
-Copy Script
-    ↓
-Open Developer Tools
-    ↓
-Console
-    ↓
-allow pasting
-    ↓
-Paste Script
-    ↓
-Enter
+```
+┌─────────────────────────────┐
+│  1. Mở trang web            │
+│           ↓                 │
+│  2. Ctrl+Shift+I / ⌘+⌥+I   │
+│           ↓                 │
+│  3. Chọn Console            │
+│           ↓                 │
+│  4. allow pasting (nếu cần) │
+│           ↓                 │
+│  5. Paste Script            │
+│           ↓                 │
+│  6. Nhấn Enter              │
+│           ↓                 │
+│  7. Nhập Access Key         │
+│           ↓                 │
+│  ✅ Hoàn tất!               │
+└─────────────────────────────┘
 ```
 
 ---
 
-## 5. Kích hoạt Hub
+## 🔐 Access Key
 
-Nếu VIVUANAMKY HUB yêu cầu Access Key:
-
-| ID       | Access Key   | Status    |
-| -------- | ------------ | --------- |
+| ID | Access Key | Trạng thái |
+|----|------------|------------|
 | `KEY_01` | `namkyontop` | 🟢 Active |
 
----
-
-# 🧰 Troubleshooting
-
-### Console không cho paste
-
-Thử tự nhập:
-
-```text
-allow pasting
-```
-
-Sau đó nhấn `Enter`.
-
-### Không mở được Developer Tools
-
-**Windows / Linux:**
-
-```text
-Ctrl + Shift + I
-```
-
-hoặc:
-
-```text
-F12
-```
-
-**macOS:**
-
-```text
-⌘ + ⌥ + I
-```
-
-### Script không hoạt động
-
-Kiểm tra:
-
-* Script đã được paste đầy đủ chưa.
-* Console có xuất hiện lỗi màu đỏ không.
-* Trang web đã tải hoàn tất chưa.
-* Access Key có chính xác không.
-* Phiên bản script có tương thích với nền tảng hiện tại không.
+> **Lưu ý:** Access Key có thể thay đổi theo từng phiên bản. Liên hệ tác giả nếu key không hoạt động.
 
 ---
 
-# 🔐 Chính sách bảo mật & điều khoản pháp lý
+## 🛠️ Troubleshooting
 
-## 1. Quyền sở hữu trí tuệ
+### ❌ Console không cho paste
 
-Toàn bộ **mã nguồn, giao diện, cấu trúc và thuật toán** của VIVUANAMKY HUB thuộc quyền sở hữu của **Admin `vVnK-wh0i4m`**.
+**Giải pháp:**
+- Gõ thủ công `allow pasting` rồi nhấn Enter
+- Thử dùng trình duyệt khác (Chrome, Edge)
+- Kiểm tra cài đặt bảo mật của trình duyệt
 
-Nghiêm cấm:
+### ❌ Không mở được Developer Tools
 
-* Sao chép hoặc tái sử dụng trái phép.
-* Phát tán hoặc đăng tải lại mã nguồn.
-* Chia sẻ các phiên bản đã chỉnh sửa mà không được phép.
-* Cố tình giải mã hoặc deobfuscate mã nguồn.
-* Sử dụng lại các thành phần độc quyền cho dự án khác khi chưa được cho phép.
+| Hệ điều hành | Phím tắt |
+|---------------|----------|
+| Windows | `Ctrl + Shift + I` hoặc `F12` |
+| macOS | `⌘ + ⌥ + I` |
+| Linux | `Ctrl + Shift + I` hoặc `F12` |
+
+### ❌ Script không hoạt động
+
+Kiểm tra các điều sau:
+
+1. ✅ Script đã được paste **đầy đủ** chưa
+2. ✅ Console có hiện **lỗi đỏ** không
+3. ✅ Trang web đã **tải hoàn tất** chưa
+4. ✅ Access Key có **chính xác** không
+5. ✅ Phiên bản script có **tương thích** với nền tảng không
+6. ✅ Trình duyệt có **hỗ trợ** ES6+ không
+
+### ❌ Script bị lỗi sau khi chạy
+
+```
+1. F5 để tải lại trang
+2. Mở Console lại
+3. Paste script mới
+4. Thử lại
+```
+
+### ❌ Hub không hiện giao diện
+
+- Kiểm tra Console có thông báo lỗi không
+- Thử tắt extension chặn script (adblock, privacy extension)
+- Thử dùng Incognito/Private mode
 
 ---
 
-## 2. Chính sách sử dụng
+## 📁 Cấu trúc dự án
+
+```
+tool-war-mess/
+├── [tool war]vVnK-hub.js    # Script chính (obfuscated)
+├── key.txt                   # Access Key
+├── LICENSE                   # Giấy phép MIT
+└── README.md                 # Tài liệu hướng dẫn
+```
+
+---
+
+## 📜 Bản quyền và điều khoản sử dụng
+
+### Bản quyền
+
+```
+MIT License
+
+Copyright (c) 2026 vVnK-wh0i4m
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+```
+
+### Điều khoản sử dụng
+
+#### 1. Quyền sở hữu trí tuệ
+
+Toàn bộ **mã nguồn, giao diện, cấu trúc và thuật toán** thuộc quyền sở hữu của **vVnK-wh0i4m**.
+
+**Nghiêm cấm:**
+- ❌ Sao chép hoặc tái sử dụng trái phép
+- ❌ Phát tán hoặc đăng tải lại mã nguồn
+- ❌ Chia sẻ phiên bản đã chỉnh sửa không được phép
+- ❌ Giải mã hoặc deobfuscate mã nguồn
+- ❌ Sử dụng thành phần độc quyền cho dự án khác
+
+#### 2. Chính sách sử dụng
 
 VIVUANAMKY HUB được cung cấp cho các mục đích:
+- 🎮 Giải trí
+- 🧪 Thử nghiệm
+- 🔬 Nghiên cứu hành vi hệ thống
+- 🛠️ Kiểm thử chức năng messaging
 
-* 🎮 Giải trí.
-* 🧪 Thử nghiệm.
-* 🔬 Nghiên cứu hành vi hệ thống.
-* 🛠️ Kiểm thử các chức năng liên quan đến tin nhắn.
+**KHÔNG** sử dụng cho mục đích:
+- ❌ Vi phạm pháp luật
+- ❌ Gây hại đến người khác
+- ❌ Spam, quấy rối
+- ❌ Gian lận, lừa đảo
 
-**Không sử dụng hub/script cho các mục đích vi phạm pháp luật hoặc gây ảnh hưởng nghiêm trọng đến người khác.**
+#### 3. Giới hạn trách nhiệm
 
-Người sử dụng tự chịu trách nhiệm đối với cách thức và mục đích sử dụng công cụ.
+- ❌ **Không đảm bảo** tài khoản sẽ không bị hạn chế, khóa hoặc ban
+- ❌ **Không chịu trách nhiệm** về thiệt hại phát sinh
+- ❌ **Không bảo hành** hoạt động ổn định, không lỗi
 
----
+> ⚠️ **Khuyến nghị:** Sử dụng ở mức hợp lý và tuân thủ quy định nền tảng.
 
-## 3. Giới hạn trách nhiệm
+#### 4. Miễn trách
 
-VIVUANAMKY HUB **không đảm bảo tài khoản người dùng sẽ không bị hạn chế, khóa hoặc ban**.
-
-Việc gửi tin nhắn với tốc độ quá cao, spam hoặc lạm dụng hệ thống có thể dẫn đến các biện pháp hạn chế từ nền tảng.
-
-> ⚠️ **Khuyến nghị:** Sử dụng công cụ ở mức hợp lý và tuân thủ các quy định của nền tảng.
-
----
-
-# ⚠️ Lưu ý
-
-VIVUANAMKY HUB hoạt động thông qua môi trường trình duyệt và có thể phụ thuộc vào:
-
-* Phiên bản trình duyệt.
-* Thay đổi của nền tảng.
-* Cấu trúc website.
-* Chính sách và giới hạn hệ thống.
-* Các cơ chế bảo mật của trình duyệt.
-
-Một phiên bản hoạt động hôm nay có thể cần cập nhật nếu nền tảng thay đổi.
+- Công cụ được cung cấp theo nguyên tắc **"AS IS"**
+- Người dùng tự chịu rủi ro khi sử dụng
+- Tác giả không đảm bảo tương thích với mọi nền tảng
 
 ---
 
-# 📜 Disclaimer
+## ⚠️ Lưu ý quan trọng
 
-Việc sử dụng VIVUANAMKY HUB đồng nghĩa với việc người dùng đã đọc, hiểu và chấp nhận các điều khoản được nêu trong tài liệu này.
+VIVUANAMKY HUB hoạt động qua môi trường trình duyệt và có thể phụ thuộc vào:
 
-**Người dùng chịu trách nhiệm đối với các hành động được thực hiện thông qua công cụ.**
+| Yếu tố | Ảnh hưởng |
+|---------|-----------|
+| Phiên bản trình duyệt | Một số tính năng có thể không hỗ trợ |
+| Thay đổi nền tảng | Script có thể cần cập nhật |
+| Cấu trúc website | DOM thay đổi có thể gây lỗi |
+| Chính sách hệ thống | Giới hạn API có thể thay đổi |
+| Bảo mật trình duyệt | Cơ chế chặn script có thể kích hoạt |
 
-Ban quản trị không chịu trách nhiệm đối với các hạn chế tài khoản phát sinh do việc sử dụng công cụ không phù hợp.
+> 📌 **Một phiên bản hoạt động hôm nay có thể cần cập nhật nếu nền tảng thay đổi.**
 
 ---
 
-# 📋 Quick Start
+## ❓ FAQ
 
-```text
-1. Mở trang web
-2. Ctrl + Shift + I / ⌘ + ⌥ + I
-3. Chọn Console
-4. Nhập "allow pasting" nếu được yêu cầu
-5. Paste VIVUANAMKY HUB
-6. Nhấn Enter
-7. Nhập Access Key nếu được yêu cầu
-```
+**Q: Script có an toàn không?**
+A: Script chạy trong Console và chỉ tác động trên trình duyệt của bạn. Tuy nhiên, luôn paste mã từ nguồn tin cậy.
+
+**Q: Tại sao cần Access Key?**
+A: Access Key giúp bảo vệ script và kiểm soát người sử dụng.
+
+**Q: Script hoạt động trên nền tảng nào?**
+A: Script hoạt động trên các nền tảng web hỗ trợ JavaScript. Tùy từng phiên bản mà có thể tương thích khác nhau.
+
+**Q: Làm sao cập nhật phiên bản mới?**
+A: Theo dõi repository để nhận thông báo cập nhật.
+
+**Q: Tôi có thể chia sẻ script cho người khác không?**
+A: Không. Nghiêm cấm chia sẻ hoặc phát tán script khi chưa được phép.
+
+---
+
+## 📞 Hỗ trợ
+
+- **GitHub Issues:** https://github.com/vVnK-wh0i4m/tool-war-mess/issues
+- **Author:** vVnK-wh0i4m
 
 ---
 
@@ -232,11 +330,14 @@ Ban quản trị không chịu trách nhiệm đối với các hạn chế tài
 
 ### ELITE EDITION
 
-**© 2026–2027 VNAMKY HUB**
+**© 2026–2027 vVnK-wh0i4m**
 
 `vVnK-wh0i4m`
 
 *Built for experimentation · Designed for fun.*
 
+---
+
+**⭐ Star repo nếu thấy hữu ích! ⭐**
+
 </div>
-```
