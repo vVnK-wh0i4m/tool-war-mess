@@ -3,16 +3,13 @@
 tokens.txt
 config.json
 
-# Python
-__pycache__/
-*.pyc
-*.pyo
-.venv/
-venv/
-
 # Logs
 *.log
 
 # Temporary
 trash/
 *.zip
+
+# OS
+Thumbs.db
+.DS_Store
