@@ -11,6 +11,8 @@
 
 *"Built for experimentation · Designed for fun."*
 
+[📥 **Tải code (.zip)**](https://github.com/vVnK-wh0i4m/tool-war-mess/archive/refs/heads/main.zip) • [📦 **Clone repo**](https://github.com/vVnK-wh0i4m/tool-war-mess.git)
+
 </div>
 
 ---
