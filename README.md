@@ -1,4 +1,3 @@
-````md
 # VIVUANAMKY HUB
 
 > **ELITE EDITION · HƯỚNG DẪN SỬ DỤNG · © 2026–2027**
@@ -21,7 +20,6 @@ Truy cập trang web/nền tảng mà bạn muốn sử dụng VIVUANAMKY HUB.
 
 ```text
 Ctrl + Shift + I
-````
 
 Hoặc:
 
