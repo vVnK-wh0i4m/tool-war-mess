@@ -236,7 +236,7 @@ Ban quản trị không chịu trách nhiệm đối với các hạn chế tài
 
 `vVnK-wh0i4m`
 
-*Built for experimentation · Designed for fun*
+*Built for experimentation · Designed for fun.*
 
 </div>
 ```
